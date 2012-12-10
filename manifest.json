@@ -1,0 +1,22 @@
+{
+  "name": "Sans Google Wrap",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "去掉 Google 搜索结果中的跳转，直接显示目标地址",
+  "page_action": {
+    "default_name": "Found Ads!",
+    "default_icon": {
+      "19": "images/19.png",
+      "38": "images/38.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["*://*.google.com.hk/*"],
+    "js": ["strip.js"]
+  }],
+  "icons": {
+    "48": "images/48.png",
+    "128": "images/128.png"
+  }
+}
