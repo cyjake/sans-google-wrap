@@ -1,6 +1,6 @@
 {
   "name": "Sans Google Wrap",
-  "version": "0.2",
+  "version": "0.3",
   "manifest_version": 2,
   "description": "去掉 Google 搜索结果中的跳转，直接显示目标地址",
   "page_action": {
