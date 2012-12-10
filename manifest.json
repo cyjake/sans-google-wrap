@@ -12,7 +12,7 @@
     "default_popup": "popup.html"
   },
   "content_scripts": [{
-    "matches": ["*://*.google.com.hk/*"],
+    "matches": ["<all_urls>"],
     "js": ["strip.js"]
   }],
   "icons": {

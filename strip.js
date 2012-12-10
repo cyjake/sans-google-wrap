@@ -20,10 +20,12 @@
     }
 
     function strip(a, i) {
-        if (a.onmousedown) {
-            a.onmousedown = null
-            a.removeAttribute('onmousedown')
-            a.target = '_blank'
-        }
+        a.onmousedown = null
+        a.removeAttribute('onmousedown')
+        a.target = '_blank'
+
+        // yeah i'm paranoid
+        a.removeEventListener('click')
+        a.removeEventListener('onmousedown')
     }
 })()
