@@ -1,6 +1,6 @@
 (function() {
 
-    if (!/^\w*.google.com(?:\.[a-z]+)?/.test(location.href)) {
+    if (!/^https?:\/\/\w*.google.com(?:\.[a-z]+)?/.test(location.href)) {
         return
     }
     var search = document.getElementById('search')
